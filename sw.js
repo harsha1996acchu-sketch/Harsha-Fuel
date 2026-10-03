@@ -1,6 +1,6 @@
-const APP_CACHE = 'harsha-fuel-app-v4-gemma-1';
+const APP_CACHE = 'harsha-fuel-app-v5-photos-1';
 const ENGINE_CACHE = 'harsha-fuel-engine-0.10.27';
-const ASSETS = ['./','./index.html','./manifest.webmanifest','./icon.svg','./coach-local.js','./genai_bundle.mjs'];
+const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./coach-local.js", "./genai_bundle.mjs", "./ui.css", "./ui.js", "./app-core.js", "./photo-data.js", "./photo-rice.jpg", "./photo-dosa.jpg", "./photo-idli.jpg", "./photo-dal.jpg", "./photo-chana.jpg", "./photo-rajma.jpg", "./photo-curry.jpg", "./photo-coffee.jpg", "./photo-banana.jpg", "./photo-egg.jpg", "./photo-chapati.jpg", "./photo-ghee.jpg", "./photo-lassi.jpg", "./photo-milk.jpg", "./photo-tea.jpg", "./photo-oil.jpg", "./photo-peanuts.jpg", "./photo-roasted_chana.jpg", "./photo-sambar.jpg", "./photo-bread.jpg", "./photo-yogurt.jpg", "./photo-salad.jpg"];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(APP_CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
 });
